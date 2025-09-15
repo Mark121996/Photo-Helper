@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Contact — Photo Helper</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <a class="logo" href="index.html">Photo Helper</a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container contact-page">
+  <h1>Contact Us</h1>
+  <p>Interested in touring a space or booking a shoot? Send us a message.</p>
+  <form id="contact-form" action="#" method="post" onsubmit="submitForm(event)">
+    <label>Name<input type="text" name="name" required></label>
+    <label>Email<input type="email" name="email" required></label>
+    <label>Message<textarea name="message" rows="6" required></textarea></label>
+    <button class="btn" type="submit">Send Message</button>
+  </form>
+  <div id="form-status" role="status" aria-live="polite"></div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div>© Photo Helper</div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
